@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nleft">
+          <a href="" class="nlink">Home</a>
+         
+          <a href="" class="nlink">Gallery</a>
+        </div>
+        <div class="nmid">
+          <a href="" class="nlink">Image Treasure</a>
+        </div>
+        <div class="nright">
+          <a href="/" class="nlink">Post Images</a>
+        </div>
+      </div>
+      <div class="gallery">
+       
+        
+        
+        <% AllName.forEach(item => { %>
+        <div class="gallery-wrapper">
+            <a href="<%= item.Link %>">
+            <img src="<%= item.Link %>" alt="" />
+            </a>
+            <div class="desc">
+                <div class="name"><i class="ri-map-pin-2-line"></i> <%= item.Desc %></div>
+                <div class="date"><%= item.date %></div>
+                
+
+            </div>
+        </div>
+        <% }); %>
+       
+          
+       
+         
+       
+      </div>
+      <div class="footer">
+        <z>
+          Copywright
+        <i class="ri-copyright-line"></i>
+        2024 Souradeep. All Right Reserved
+        </z>
+        
+      </div>
+    </div>
+  </body>
+</html>
