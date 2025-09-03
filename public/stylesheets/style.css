@@ -15,7 +15,7 @@
 
 .gallery-wrapper img {
   background-color: rgb(221, 223, 221);
-  width: calc(90vw / 4);
+  width: calc(90vw / 3);
 
   object-fit: cover;
   gap: 0.5vw;
